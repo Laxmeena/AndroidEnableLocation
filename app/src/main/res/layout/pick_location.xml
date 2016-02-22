@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<SearchView-->
+        <!--android:id="@+id/location_searchView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:queryHint="Pick Locality" />-->
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:hint="Enter Place Here"/>
+
+    <LinearLayout
+        android:id="@+id/mylocation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autoCompleteTextView"
+        android:background="@color/border">
+
+        <Button
+            android:id="@+id/btn_use_my_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/location_searchView"
+            android:layout_margin="5dp"
+            android:background="#FFF"
+            android:drawableLeft="@mipmap/location"
+            android:gravity="center_vertical"
+            android:text="Use My Location"
+            android:textColor="@color/border" />
+    </LinearLayout>
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+    <!--android:text="We currently deliver in selected localities in"-->
+    <!--android:id="@+id/textView15"-->
+    <!--android:layout_below="@+id/mylocation_layout"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:textStyle="bold"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:paddingLeft="30dp"-->
+    <!--android:paddingRight="30dp"-->
+    <!--android:text="@string/State"-->
+    <!--android:id="@+id/textView16"-->
+    <!--android:layout_below="@+id/textView15" />-->
+
+
+</RelativeLayout>
